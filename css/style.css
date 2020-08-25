@@ -19,7 +19,8 @@ a {
 
 header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   header .logo {
     margin: 19px 19px 19px 166px; }
   header ul {
@@ -44,7 +45,8 @@ h1 {
   font-size: 80px;
   line-height: 100px;
   text-align: center;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-family: Quatro Slab; }
 
 h2 {
   font-style: normal;
@@ -52,7 +54,8 @@ h2 {
   font-size: 36px;
   line-height: 45px;
   text-align: center;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-family: Quatro Slab; }
 
 h3 {
   font-style: normal;
@@ -60,7 +63,8 @@ h3 {
   font-size: 36px;
   line-height: 45px;
   text-align: center;
-  color: #003057; }
+  color: #003057;
+  font-family: Quatro Slab; }
 
 h4 {
   font-style: normal;
@@ -68,7 +72,8 @@ h4 {
   font-size: 28px;
   line-height: 35px;
   text-align: center;
-  color: #003057; }
+  color: #003057;
+  font-family: Quatro Slab; }
 
 h5 {
   font-family: Source Sans Pro;
@@ -137,11 +142,100 @@ h5 {
     .advantages .advantage_item h5 {
       margin: 21px 0; }
 
+section.main_advantages {
+  padding-bottom: 50px; }
+
 .main_information {
+  background: #F6F9FA;
   display: flex;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  background: #F6F9FA; }
-  .main_information div {
+  position: relative; }
+  .main_information .wave_top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: url("../img/waves_top.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100px; }
+  .main_information .wave_bottom {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    right: 0;
+    background: url("../img/waves_bottom.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100px; }
+  .main_information .picture {
     width: 50%; }
+    .main_information .picture img {
+      width: 100%; }
+  .main_information .information {
+    width: 50%;
+    padding: 0 113px; }
+    .main_information .information .inf_text {
+      width: 80%;
+      margin: 0 auto 50px; }
+      .main_information .information .inf_text h4 {
+        margin-top: 40px; }
+      .main_information .information .inf_text p {
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 150%;
+        text-indent: 32px;
+        font-family: Source Sans Pro; }
+  .main_information .inf_icons {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .main_information .inf_icons .symptom {
+      width: 25%;
+      margin: 30px 0;
+      text-align: center; }
+      .main_information .inf_icons .symptom p {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        color: #003057;
+        padding-top: 10px; }
+
+.map {
+  position: relative;
+  text-align: center;
+  padding: 140px 0 70px; }
+  .map p {
+    margin-top: 50px;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    text-indent: 32px;
+    color: #003057;
+    padding: 0 120px;
+    text-align: right; }
+
+.state1 {
+  background: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 370px;
+  height: 230px; }
+
+.main_video {
+  text-align: center; }
+  .main_video .video {
+    margin-top: 80px; }
 
 /*# sourceMappingURL=style.css.map */
